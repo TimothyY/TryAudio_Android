@@ -60,7 +60,7 @@ public class AudioService extends Service implements MediaPlayer.OnPreparedListe
         player.setOnErrorListener(this);
     }
 
-    public void playSong(){
+    public void playAudio(){
         player.reset();
         try{player.setDataSource(getApplicationContext(), Uri.parse(audioURI));}
         catch(Exception e){Log.e("AUIDO SERVICE", "Error setting data source", e);}
